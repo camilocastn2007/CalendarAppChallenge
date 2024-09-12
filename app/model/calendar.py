@@ -45,6 +45,17 @@ class Event:
         Description: {self.description}
         Time: {self.start_at} - {self.end_at}
 
+class Day:
+    def __init__(self,date_ :date,slots :dict[time, str | None]):
+        self.date_: date= date_
+        self._init_(slots)
+        pass
+
+    def _init_slot(self):
+        pass
 
 
+
+    def add_event(self,event_id :str,start_at :time,end_at :time):
+        pass
 
